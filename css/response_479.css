@@ -1,0 +1,535 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+        --font_size_title_big: 30px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: var(--cont_padding_half);
+    }
+
+
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: var(--cont_padding);
+        right: var(--cont_padding);
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 30px;
+
+        gap: 4px;
+    }
+
+
+    .pagination a,
+    .pagination .sep
+    {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+
+    .pagination a.prev,
+    .pagination a.next
+    {
+        width: 32px;
+    }
+
+
+    .pagination a.prev .icon,
+    .pagination a.next .icon
+    {
+        width: 24px;
+        height: 23px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.middle_m,
+    .block_head.big_m
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .image img
+    {
+        object-position: 25% 50%;
+    }
+
+
+
+    /*-----------------
+        Main pluses
+    -----------------*/
+    .main_pluses .item
+    {
+        width: 100%;
+        min-height: 80px;
+        padding-inline: var(--cont_padding);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .main_pluses .item:before
+    {
+        right: var(--cont_padding);
+
+        font-size: 68px;
+    }
+
+
+    .main_pluses .item br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .thumb
+    {
+        height: 124px;
+    }
+
+
+    .catalog .category .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------------
+        Invite to cooperate
+    -------------------------*/
+    .invite_to_cooperate .row
+    {
+        margin-left: 0;
+    }
+
+
+    .invite_to_cooperate .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .invite_to_cooperate .item
+    {
+        min-height: 80px;
+        padding-inline: calc(var(--cont_padding) - 1px);
+    }
+
+
+
+    /*--------------------
+        Articles block
+    --------------------*/
+    .articles_block .swiper
+    {
+        width: 308px;
+    }
+
+
+    .articles_block .article .thumb
+    {
+        padding-bottom: 80%;
+    }
+
+
+    .articles_block .article .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------
+        Blog
+    -----------*/
+    .blog .article .thumb
+    {
+        height: 252px;
+    }
+
+
+    .blog .article .desc
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .blog .article .link
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .blog .article .link .icon
+    {
+        width: 24px;
+        height: 23px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 280px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .item .thumb
+    {
+        height: 170px;
+        padding-top: var(--cont_padding_half);
+    }
+
+
+    .production .item .link
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-left: 0;
+    }
+
+
+    .advantages .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 0;
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Products
+    -------------*/
+    .products .category .link
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .products .category .link .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .products .category .thumb,
+    .products .category .thumb.big
+    {
+        height: 140px;
+    }
+
+
+    .products .category.big
+    {
+        min-height: 168px;
+        padding-right: 80px;
+    }
+
+
+    .products .category.big .thumb
+    {
+        height: 75%;
+        padding: var(--cont_padding_half);
+    }
+
+
+
+    /*------------------
+        Advantages 2
+    ------------------*/
+    .advantages2 .grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .advantages2 .item.big .icon
+    {
+        height: 44px;
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big .image
+    {
+        height: 340px;
+    }
+
+
+    .product_info .images .thumbs .image
+    {
+        height: 64px;
+    }
+
+
+
+    .product_info .flavor .vals label
+    {
+        width: calc(20% - 8px);
+    }
+
+
+    .product_info .flavor .vals .thumb
+    {
+        height: 64px;
+    }
+
+
+    .product_info .order .btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Request calc
+    ------------------*/
+    .request_calc .form .line
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------------
+        Products slider
+    ---------------------*/
+    .products_slider .swiper
+    {
+        padding-inline: var(--cont_padding_double);
+    }
+
+
+    .products_slider .swiper-button-prev
+    {
+        left: 0;
+    }
+
+    .products_slider .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+
+    /*------------
+        Values
+    ------------*/
+    .values .row
+    {
+        margin-left: 0;
+    }
+
+
+    .values .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .values .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row
+    {
+        margin-left: 0;
+    }
+
+
+    .files .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .files .file
+    {
+        min-height: 148px;
+    }
+
+
+
+    /*--------------------
+        We looking for
+    --------------------*/
+    .we_looking_for .item .head
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .we_looking_for .item .desc
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------------
+        Partnership why
+    ---------------------*/
+    .partnership_why .row
+    {
+        margin-left: 0;
+    }
+
+
+    .partnership_why .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .partnership_why .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        display: none;
+    }
+
+
+    footer .btns
+    {
+        width: 100%;
+    }
+
+
+    footer .sites
+    {
+        justify-content: center;
+
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .modal_title
+    {
+        font-size: 22px;
+    }
+}

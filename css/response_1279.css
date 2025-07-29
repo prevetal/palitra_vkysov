@@ -1,0 +1,1791 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 32px;
+        --font_size_title_big: 40px;
+        --offset: 68px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block.bg
+    {
+        padding-block: var(--offset);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination a,
+    .pagination .sep
+    {
+        width: 48px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: var(--cont_padding);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .tabs .btn
+    {
+        min-width: 124px;
+        padding-block: calc(var(--cont_padding_half) - 1px);
+        padding-inline: calc(var(--cont_padding) - 1px);
+
+        font-size: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion
+    {
+        gap: var(--cont_padding_half);
+    }
+
+
+    .accordion_item .head
+    {
+        padding-block: var(--cont_padding_half);
+        padding-inline: var(--cont_padding) var(--cont_padding_half);
+    }
+
+
+    .accordion_item .head .title
+    {
+        width: calc(100% - 56px);
+
+        font-size: 18px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 68px var(--cont_padding) var(--cont_padding);
+    }
+
+
+    .accordion_item.active
+    {
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .10);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .bottom
+    {
+        padding-block: var(--cont_padding_half);
+    }
+
+
+    header .logo img
+    {
+        width: 260px;
+        height: 56px;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 752px);
+    }
+
+
+    header .contacts .phone
+    {
+        font-size: 18px;
+    }
+
+
+    header .request_btn
+    {
+        padding: calc(var(--cont_padding_half) - 1px) calc(var(--cont_padding) - 5px);
+    }
+
+
+    header .menu_item > a
+    {
+        min-height: 64px;
+
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: var(--cont_padding);
+    }
+
+
+    .page_head .cont
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .page_head .date
+    {
+        margin-bottom: calc(var(--cont_padding_half) * -1);
+
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.middle_m,
+    .block_head.big_m
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 15px;
+    }
+
+
+    .text_block h4
+    {
+        font-size: 20px;
+    }
+
+
+    .text_block table .big_pad
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .text_block table th.big
+    {
+        width: 340px;
+    }
+
+
+    .text_block table th.small
+    {
+        width: 88px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        min-height: 500px;
+        padding-block: var(--offset);
+    }
+
+
+    .main_slider .swiper-button-next,
+    .main_slider .swiper-button-prev
+    {
+        bottom: 76px;
+
+        width: 48px;
+        height: 48px;
+
+        border-width: 1px;
+        border-radius: 12px;
+    }
+
+
+    .main_slider .swiper-button-prev
+    {
+        left: var(--cont_padding);
+
+        margin-left: 0;
+    }
+
+
+    .main_slider .swiper-button-next
+    {
+        right: var(--cont_padding);
+
+        margin-right: 0;
+    }
+
+
+    .main_slider .swiper-button-next .icon,
+    .main_slider .swiper-button-prev .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+    /*-----------------
+        Main pluses
+    -----------------*/
+    .main_pluses
+    {
+        margin-top: -52px;
+    }
+
+
+    .main_pluses .item
+    {
+        min-height: 104px;
+
+        font-size: var(--font_size);
+    }
+
+
+    .main_pluses .item:before
+    {
+        right: var(--cont_padding_half);
+
+        font-size: 88px;
+    }
+
+
+    .main_pluses .item .icon
+    {
+        width: 52px;
+        min-width: 52px;
+        height: 52px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .catalog .row > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .catalog .category:before
+    {
+        top: -80px;
+        right: -60px;
+
+        width: 320px;
+        height: 320px;
+    }
+
+
+    .catalog .category .thumb
+    {
+        height: 224px;
+        margin-bottom: var(--cont_padding_half);
+    }
+
+
+    .catalog .category .name
+    {
+        width: calc(100% - 72px);
+        min-height: 48px;
+
+        font-size: 18px;
+    }
+
+
+    .catalog .category .link
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .catalog .category .link .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*-------------------------
+        Invite to cooperate
+    -------------------------*/
+    .invite_to_cooperate .data
+    {
+        width: 328px;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .invite_to_cooperate .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .invite_to_cooperate .items
+    {
+        width: calc(100% - 376px);
+    }
+
+
+    .invite_to_cooperate .row
+    {
+        margin-bottom: -20px;
+    }
+
+
+    .invite_to_cooperate .row > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .invite_to_cooperate .item
+    {
+        min-height: 104px;
+        padding: calc(var(--cont_padding) - 1px);
+
+        font-size: 16px;
+
+        gap: 20px;
+    }
+
+
+    .invite_to_cooperate .item .icon
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .invite_to_cooperate .item .icon + *
+    {
+        width: calc(100% - 72px);
+    }
+
+
+    .invite_to_cooperate .text
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+
+    /*--------------------
+        Articles block
+    --------------------*/
+    .articles_block .swiper
+    {
+        width: 680px;
+    }
+
+
+    .articles_block .swiper-button-next,
+    .articles_block .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .articles_block .article .info
+    {
+        padding: var(--cont_padding);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .articles_block .article .name
+    {
+        font-size: 22px;
+    }
+
+
+    .articles_block .article .desc
+    {
+        width: calc(100% - 72px);
+
+        font-size: var(--font_size);
+    }
+
+
+    .articles_block .article .link
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .articles_block .all_link
+    {
+        margin-top: var(--cont_padding_double);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(100% - 396px);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .about_info .boss
+    {
+        width: 348px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .about_info .boss .name
+    {
+        font-size: 20px;
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .articles .article .info
+    {
+        padding-top: 16px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+
+    .articles .article .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-----------
+        Blog
+    -----------*/
+    .blog .article .info
+    {
+        padding: var(--cont_padding);
+
+        gap: 8px;
+    }
+
+
+    .blog .article .desc
+    {
+        width: calc(100% - 72px);
+
+        font-size: var(--font_size);
+    }
+
+
+    .blog .article .date
+    {
+        top: var(--cont_padding_half);
+        right: var(--cont_padding_half);
+
+        padding: 4px var(--cont_padding_half);
+
+        font-size: var(--font_size);
+    }
+
+
+    .blog .article .thumb
+    {
+        height: 300px;
+    }
+
+
+    .blog .article .name
+    {
+        font-size: 22px;
+    }
+
+
+    .blog .article .link
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 300px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: calc(100% - 348px);
+        height: 448px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .production .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .production .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .production .item:before
+    {
+        bottom: -212px;
+        left: -100px;
+
+        width: 480px;
+        height: 480px;
+    }
+
+
+    .production .item .name
+    {
+        font-size: 22px;
+    }
+
+
+    .production .item .thumb
+    {
+        height: 240px;
+    }
+
+
+    .production .item .link
+    {
+        right: var(--cont_padding);
+        bottom: var(--cont_padding);
+
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .advantages .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .advantages .item
+    {
+        min-height: 200px;
+        padding: var(--cont_padding_double) var(--cont_padding) 40px;
+    }
+
+
+    .advantages .item .icon
+    {
+        height: 68px;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .advantages .item .desc
+    {
+        padding: var(--cont_padding);
+
+        font-size: 16px;
+    }
+
+
+
+    /*-------------
+        Products
+    -------------*/
+    .products .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .products .row:before
+    {
+        top: var(--cont_padding);
+        left: 124px;
+
+        width: 440px;
+        height: 440px;
+    }
+
+
+    .products .row.bubles:before
+    {
+        top: 124px;
+        left: 124px;
+
+        width: 320px;
+        height: 320px;
+    }
+
+
+    .products .row.bubles:after
+    {
+        right: 124px;
+        bottom: 124px;
+
+        width: 320px;
+        height: 320px;
+    }
+
+
+    .products .row.bubles2:before
+    {
+        top: 124px;
+        left: 124px;
+
+        width: 320px;
+        height: 320px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .products .row > *.big
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .products .category
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .products .category .name
+    {
+        font-size: 22px;
+    }
+
+
+    .products .category .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .products .category .thumb,
+    .products .category .thumb.big
+    {
+        height: 160px;
+    }
+
+
+    .products .category .link
+    {
+        right: var(--cont_padding);
+        bottom: var(--cont_padding);
+
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .products .category.big
+    {
+        min-height: 224px;
+        padding-right: 160px;
+    }
+
+
+    .products .category.big .link
+    {
+        bottom: var(--cont_padding);
+        left: var(--cont_padding);
+    }
+
+
+
+    /*------------------
+        Advantages 2
+    ------------------*/
+    .advantages2 .grid
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .advantages2 .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: var(--font_size);
+    }
+
+
+    .advantages2 .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .data,
+    .info_block .image
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*--------------
+        For whom
+    --------------*/
+    .for_whom .grid
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .for_whom .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: var(--font_size);
+    }
+
+
+    .for_whom .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .data
+    {
+        width: calc(50% - var(--cont_padding_half));
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .service_info .item
+    {
+        padding: var(--cont_padding);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .service_info .item .name
+    {
+        font-size: 22px;
+    }
+
+
+    .service_info .item .desc,
+    .service_info .item .list
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .service_info .image
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .service_info .image:before
+    {
+        top: calc(var(--cont_padding) * -1);
+        right: calc(var(--cont_padding) * -3);
+
+        width: 248px;
+        height: 248px;
+    }
+
+
+    .service_info .image:after
+    {
+        right: calc(var(--cont_padding) * -3);
+        bottom: calc(var(--cont_padding) * -1);
+
+        width: 248px;
+        height: 248px;
+
+        border-width: var(--cont_padding);
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why .grid
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .why .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: var(--font_size);
+    }
+
+
+    .why .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row:before
+    {
+        top: 32px;
+
+        width: calc(100% - 128px);
+    }
+
+
+    .steps .item .number
+    {
+        width: 64px;
+        height: 64px;
+
+        font-size: 18px;
+    }
+
+
+    .steps .item .line
+    {
+        margin-inline: 30px;
+    }
+
+
+    .steps .item:nth-child(2) .line
+    {
+        margin-top: 124px;
+    }
+
+    .steps .item:nth-child(2) .line:before
+    {
+        height: 124px;
+    }
+
+
+    .steps .item:nth-child(3) .line
+    {
+        margin-top: 68px;
+    }
+
+    .steps .item:nth-child(3) .line:before
+    {
+        height: 68px;
+    }
+
+
+    .steps .item:nth-child(4) .line
+    {
+        margin-top: 248px;
+    }
+
+    .steps .item:nth-child(4) .line:before
+    {
+        height: 248px;
+    }
+
+
+    .steps .item:nth-child(5) .line
+    {
+        margin-top: 68px;
+    }
+
+    .steps .item:nth-child(5) .line:before
+    {
+        height: 68px;
+    }
+
+
+    .steps .item .info
+    {
+        margin-top: var(--cont_padding_half);
+    }
+
+
+    .steps .item .name
+    {
+        font-size: 22px;
+    }
+
+
+    .steps .item .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .steps .item:last-child .info > *
+    {
+        width: 196px;
+    }
+
+
+
+    /*---------
+        How
+    ---------*/
+    .how .grid
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .how .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: var(--font_size);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .how .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .how .item .list
+    {
+        gap: var(--cont_padding_half) 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .product_info .images .big .image
+    {
+        height: 480px;
+        padding: calc(var(--cont_padding_half) - 1px);
+    }
+
+
+    .product_info .images .thumbs .image
+    {
+        height: 92px;
+    }
+
+
+
+    .product_info .data
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .product_info .btns .btn
+    {
+        min-width: 0;
+        padding-block: calc(var(--cont_padding_half) - 2px);
+        padding-inline: calc(var(--cont_padding) - 2px);
+
+        gap: 8px;
+    }
+
+
+    .product_info .btns .btn .icon
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .product_info .paroduct_name
+    {
+        margin-bottom: var(--cont_padding_half);
+    }
+
+
+    .product_info .flavor .vals
+    {
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+
+
+    .product_info .flavor .vals label
+    {
+        width: calc(16.666% - 8px);
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .product_info .flavor .vals .thumb
+    {
+        height: 80px;
+        padding: 7px;
+    }
+
+
+    .product_info .desc
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .product_info .pluses
+    {
+        margin-top: var(--cont_padding);
+        margin-bottom: calc(var(--cont_padding_half) * -1);
+        margin-left: calc(var(--cont_padding_half) * -1);
+    }
+
+
+    .product_info .pluses > *
+    {
+        width: calc(25% - var(--cont_padding_half));
+        min-height: 0;
+        margin-bottom: var(--cont_padding_half);
+        margin-left: var(--cont_padding_half);
+        padding: 20px var(--cont_padding_half);
+
+        font-size: 12px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .product_info .pluses .icon
+    {
+        height: 36px;
+    }
+
+
+    .product_info .order
+    {
+        margin-top: var(--cont_padding);
+
+        gap: 8px;
+    }
+
+
+    .product_info .order div
+    {
+        margin-bottom: 4px;
+    }
+
+
+    .product_info .order .btn
+    {
+        padding: 19px;
+    }
+
+
+
+    /*------------------
+        Request calc
+    ------------------*/
+    .request_calc .form .line
+    {
+        width: calc((100% - 240px) / 2);
+    }
+
+
+    .request_calc .form .submit_btn
+    {
+        width: 200px;
+        padding: 19px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .item .head .title
+    {
+        font-size: 22px;
+    }
+
+
+    .product_data .item .head .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .product_data .item .head .icon svg
+    {
+        width: 24px;
+        height: 23px;
+    }
+
+
+
+    /*---------------------
+        Products slider
+    ---------------------*/
+    .products_slider .swiper
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .products_slider .swiper-button-prev
+    {
+        left: -20px;
+    }
+
+    .products_slider .swiper-button-next
+    {
+        right: -20px;
+    }
+
+
+    .products_slider .product
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .products_slider .product .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------
+        Contacts block3
+    ---------------------*/
+    .contacts_block3 .data
+    {
+        width: 300px;
+    }
+
+
+    .contacts_block3 .item
+    {
+        font-size: 18px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .contacts_block3 .item .icon svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .contacts_block3 .item .icon svg.big
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .contacts_block3 .map
+    {
+        width: calc(100% - 348px);
+        height: 480px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------
+        Mission
+    -------------*/
+    .mission .image
+    {
+        width: 360px;
+        margin-right: 0;
+    }
+
+
+    .mission .data
+    {
+        width: 488px;
+
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Values
+    ------------*/
+    .values .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .values .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .values .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: 16px;
+    }
+
+
+    .values .item .icon
+    {
+        height: 60px;
+        margin-bottom: 8px;
+    }
+
+
+
+    /*----------------------
+        About production
+    ----------------------*/
+    .about_production .data
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .about_production .items > *
+    {
+        padding: var(--cont_padding);
+
+        font-size: 18px;
+    }
+
+
+    .about_production .video
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .about_production .video .thumb .icon
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .row:before
+    {
+        top: 32px;
+
+        width: calc(100% - 128px);
+    }
+
+
+    .history .item .number
+    {
+        width: 64px;
+        height: 64px;
+
+        font-size: 18px;
+    }
+
+
+    .history .item .line
+    {
+        margin-inline: 30px;
+    }
+
+
+    .history .item:nth-child(2) .line
+    {
+        margin-top: 148px;
+    }
+
+    .history .item:nth-child(2) .line:before
+    {
+        height: 148px;
+    }
+
+
+    .history .item:nth-child(3) .line
+    {
+        margin-top: 68px;
+    }
+
+    .history .item:nth-child(3) .line:before
+    {
+        height: 68px;
+    }
+
+
+    .history .item:nth-child(4) .line
+    {
+        margin-top: 248px;
+    }
+
+    .history .item:nth-child(4) .line:before
+    {
+        height: 248px;
+    }
+
+
+    .history .item:nth-child(5) .line
+    {
+        margin-top: 68px;
+    }
+
+    .history .item:nth-child(5) .line:before
+    {
+        height: 68px;
+    }
+
+
+    .history .item .info
+    {
+        margin-top: var(--cont_padding_half);
+    }
+
+
+    .history .item .info > *
+    {
+        min-width: 196px;
+    }
+
+
+    .history .item .year
+    {
+        font-size: 22px;
+    }
+
+
+    .history .item .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
+    .files .file
+    {
+        min-height: 180px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .files .file .name
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .contacts_block .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .contacts_block .section
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .contacts_block .map
+    {
+        height: 440px;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------------------
+        For partners info
+    -----------------------*/
+    .for_partners_info .data
+    {
+        width: calc(100% - 448px);
+    }
+
+
+    .for_partners_info .items
+    {
+        font-size: 16px;
+    }
+
+
+    .for_partners_info .btn
+    {
+        margin-top: var(--cont_padding);
+        padding: 20px var(--cont_padding_double);
+    }
+
+
+    .for_partners_info .image
+    {
+        width: 400px;
+    }
+
+
+
+    /*-------------------------
+        Partnership formats
+    -------------------------*/
+    .partnership_formats .list
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .partnership_formats .item .image
+    {
+        width: calc(50% - var(--cont_padding_half));
+        min-height: 200px;
+    }
+
+
+    .partnership_formats .item .info
+    {
+        width: calc(50% - var(--cont_padding_half));
+        padding: var(--cont_padding);
+    }
+
+
+    .partnership_formats .item .label,
+    .partnership_formats .item .val
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*--------------------
+        We looking for
+    --------------------*/
+    .we_looking_for .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .we_looking_for .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .we_looking_for .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .we_looking_for .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .we_looking_for .item .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------------------
+        Partnership why
+    ---------------------*/
+    .partnership_why .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .partnership_why .row > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .partnership_why .item
+    {
+        padding: 40px var(--cont_padding);
+
+        font-size: var(--font_size);
+    }
+
+
+    .partnership_why .item .val
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------------
+        Contacts block2
+    ---------------------*/
+    .contacts_block2 .data
+    {
+        width: calc(50% - var(--cont_padding_half));
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .contacts_block2 .section
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .contacts_block2 .text
+    {
+        font-size: 16px;
+    }
+
+
+    .contacts_block2 .btn
+    {
+        padding: 20px var(--cont_padding_double);
+    }
+
+
+    .contacts_block2 .map
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-block: var(--offset) var(--cont_padding_double);
+    }
+
+
+    footer .logo img
+    {
+        width: 296px;
+        height: 64px;
+    }
+
+
+    footer .contacts .phone,
+    footer .contacts .email
+    {
+        font-size: 17px;
+    }
+
+
+    footer .menu
+    {
+        font-size: 16px;
+    }
+
+
+    footer .links .title
+    {
+        font-size: 16px;
+    }
+
+
+    footer .links .items
+    {
+        max-width: 196px;
+
+        font-size: 13px;
+    }
+
+
+    footer .btns
+    {
+        width: 224px;
+    }
+
+
+    footer .btns .btn
+    {
+        padding: calc(var(--cont_padding_half) - 1px) calc(var(--cont_padding) - 5px);
+    }
+}
