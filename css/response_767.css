@@ -310,7 +310,7 @@
     /*-------------------------
         Invite to cooperate
     -------------------------*/
-    .invite_to_cooperate .link a
+    .invite_to_cooperate .data .link a
     {
         width: 100%;
     }
@@ -336,8 +336,6 @@
         min-height: 100px;
         padding: calc(var(--cont_padding_half) - 1px);
 
-        font-size: var(--font_size);
-
         gap: var(--cont_padding_half);
     }
 
@@ -352,6 +350,12 @@
     .invite_to_cooperate .item .icon + *
     {
         width: calc(100% - 52px);
+    }
+
+
+    .invite_to_cooperate .item .name
+    {
+        font-size: var(--font_size);
     }
 
 
@@ -412,7 +416,10 @@
     ----------------*/
     .about_info .data
     {
+        order: 2;
+
         width: 100%;
+        margin-top: var(--cont_padding);
     }
 
 
@@ -425,7 +432,6 @@
     .about_info .boss
     {
         width: 100%;
-        margin-top: var(--cont_padding);
     }
 
 
@@ -812,6 +818,20 @@
     }
 
 
+    .product_info .btns .btn
+    {
+        padding: 10px 18px;
+
+        gap: 6px;
+    }
+
+
+    .product_info .btns .btn .icon
+    {
+        width: 12px;
+        height: 12px;
+    }
+
 
     .product_info .flavor .vals label
     {
@@ -899,6 +919,8 @@
 
     .contacts_block3 .btn
     {
+        display: none;
+
         width: 100%;
         margin-top: var(--cont_padding);
     }
@@ -912,20 +934,28 @@
     }
 
 
+    .contacts_block3 .mob_btn
+    {
+        display: block;
+    }
+
+
 
     /*-------------
         Mission
     -------------*/
     .mission .image
     {
+        order: 2;
+
         width: 100%;
+        margin-top: var(--cont_padding);
     }
 
 
     .mission .data
     {
         width: 100%;
-        margin-top: var(--cont_padding);
     }
 
 
@@ -1071,7 +1101,10 @@
     -----------------------*/
     .for_partners_info .data
     {
+        order: 2;
+
         width: 100%;
+        margin-top: var(--cont_padding);
     }
 
 
@@ -1085,7 +1118,6 @@
     .for_partners_info .image
     {
         width: 100%;
-        margin-top: var(--cont_padding);
     }
 
 
@@ -1150,6 +1182,8 @@
 
     .contacts_block2 .btn
     {
+        display: none;
+
         padding: 16px var(--cont_padding_double);
     }
 
@@ -1159,6 +1193,32 @@
         width: 100%;
         height: 360px;
         margin-top: var(--cont_padding);
+    }
+
+
+    .contacts_block2 .mob_btn
+    {
+        display: block;
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner .swiper-button-next,
+    .top_banner .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .top_banner .swiper-button-next .icon,
+    .top_banner .swiper-button-prev .icon
+    {
+        width: 24px;
+        height: 24px;
     }
 
 

@@ -95,6 +95,21 @@
     }
 
 
+    header .sub_menu .items
+    {
+        max-height: 156px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    header .sub_menu a
+    {
+        font-size: 16px;
+        line-height: calc(100% + 6px);
+    }
+
+
 
     /*---------------
         Page head
@@ -270,7 +285,7 @@
     /*-------------------------
         Invite to cooperate
     -------------------------*/
-    .invite_to_cooperate .link a
+    .invite_to_cooperate .data .link a
     {
         padding: 20px var(--cont_padding_double);
     }
@@ -339,6 +354,44 @@
     .contacts_block3 .btn
     {
         padding: 20px var(--cont_padding_double);
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner .swiper-button-next,
+    .top_banner .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 16px;
+    }
+
+
+    .top_banner .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: calc(var(--content_width) / -2);
+    }
+
+
+    .top_banner .swiper-button-next
+    {
+        right: 50%;
+
+        margin-right: calc(var(--content_width) / -2);
+    }
+
+
+    .top_banner .swiper-button-next .icon,
+    .top_banner .swiper-button-prev .icon
+    {
+        width: 40px;
+        height: 40px;
     }
 
 

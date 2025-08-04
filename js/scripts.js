@@ -17,12 +17,28 @@ document.addEventListener('DOMContentLoaded', function() {
 			spaceBetween: 0,
 			slidesPerView: 1,
 			loopAdditionalSlides: 1,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-				bulletActiveClass: 'active'
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
 			},
+			lazy: true
+		})
+	}
+
+
+	// Top banner slider
+	let topBannerSlider = document.querySelector('.top_banner .swiper')
+
+	if (topBannerSlider) {
+		new Swiper('.top_banner .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			loopAdditionalSlides: 1,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
@@ -97,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		el.classList.add('articles_s' + i)
 
 		let options = {
-			loop: false,
+			loop: true,
 			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
@@ -111,7 +127,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			slidesPerView: 1,
 			spaceBetween: 80,
 			on: {
-				init: swiper => setHeight(swiper.el.querySelectorAll('.article')),
+				init: swiper => {
+					swiper.slidePrev(0)
+					swiper.slideNext(0)
+
+					setHeight(swiper.el.querySelectorAll('.article'))
+				},
 				resize: swiper => {
 					let items = swiper.el.querySelectorAll('.article')
 
@@ -387,6 +408,36 @@ document.addEventListener('DOMContentLoaded', function() {
 					block: 'start'
 				}, 1000)
 			})
+		})
+	}
+
+
+	if (is_touch_device()) {
+		const subMenus = document.querySelectorAll('header .menu .sub_menu')
+
+		// Submenu on the touch screen
+		$('header .menu_item > a.sub_link').addClass('touch_link')
+
+		$('header .menu_item > a.sub_link').click(function (e) {
+			const dropdown = $(this).next()
+
+			if (dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				subMenus.forEach(el => el.classList.remove('show'))
+				dropdown.addClass('show')
+
+				BODY.style = 'cursor: pointer;'
+			}
+		})
+
+		// Close the submenu when clicking outside it
+		document.addEventListener('click', e => {
+			if ($(e.target).closest('.menu').length === 0) {
+				subMenus.forEach(el => el.classList.remove('show'))
+
+				BODY.style = 'cursor: default;'
+			}
 		})
 	}
 })
