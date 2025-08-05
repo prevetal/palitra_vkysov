@@ -410,36 +410,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 		})
 	}
-
-
-	if (is_touch_device()) {
-		const subMenus = document.querySelectorAll('header .menu .sub_menu')
-
-		// Submenu on the touch screen
-		$('header .menu_item > a.sub_link').addClass('touch_link')
-
-		$('header .menu_item > a.sub_link').click(function (e) {
-			const dropdown = $(this).next()
-
-			if (dropdown.css('visibility') === 'hidden') {
-				e.preventDefault()
-
-				subMenus.forEach(el => el.classList.remove('show'))
-				dropdown.addClass('show')
-
-				BODY.style = 'cursor: pointer;'
-			}
-		})
-
-		// Close the submenu when clicking outside it
-		document.addEventListener('click', e => {
-			if ($(e.target).closest('.menu').length === 0) {
-				subMenus.forEach(el => el.classList.remove('show'))
-
-				BODY.style = 'cursor: default;'
-			}
-		})
-	}
 })
 
 

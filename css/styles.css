@@ -6185,6 +6185,12 @@ header .sub_menu a.active
 }
 
 
+.product_info .mob_paroduct_name
+{
+    display: none;
+}
+
+
 
 .product_info .flavor .label
 {
